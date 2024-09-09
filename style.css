@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 72%;
+    
+}
+
+.icon{
+    margin-right: 120px;
+}
+
+.card {
+    background-color: white;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    padding-top: 5rem;
+   
+    overflow: hidden;
+}
+
+.card h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 15px;
+    padding-top: 32px;
+    font-weight: 700;
+}
+
+.card p {
+    text-align: left;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 20px;
+    padding-top: 17px;
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-top: 28px;
+    margin-right: 80px;
+}
+.one{
+    color: hsl(31, 77%, 52%);
+}
+
+
+.sedan {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: hsl(31, 77%, 52%);
+}
+.two {
+    color: hsl(184, 100%, 22%);
+}
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.three {
+    color: hsl(179, 100%, 13%);
+}
+.luxury {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 1024px){
+    .card {
+        padding-top: 2rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .card p {
+        font-size: 12px;
+    }
+    .card h2 {
+        font-size: 25px;
+    }
+    .container{
+        height: 90%;
+        flex-direction: column;
+    }
+    .card {
+        padding-top: 1rem;
+    }
+    .card h2 {
+        padding-top: 0;
+    }
+    .card p {
+        padding-top: 0;
+    }
+    .btn {
+        margin-top: 0;
+    }
+    .sedan {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
